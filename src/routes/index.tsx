@@ -15,9 +15,9 @@ import {
   Phone,
   Linkedin,
   ArrowRight,
-  Sparkles,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoAsset from "@/assets/logo.png.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -118,9 +118,12 @@ function Index() {
       {/* Navigation */}
       <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/80 backdrop-blur-md">
         <div className="container-tight flex h-16 items-center justify-between">
-          <a href="/" className="flex items-center gap-2 text-xl font-bold tracking-tight text-navy">
-            <Sparkles className="h-5 w-5 text-teal" />
-            NaniAiTech
+          <a href="/" className="flex items-center gap-2">
+            <img
+              src={logoAsset.url}
+              alt="NaniAiTech"
+              className="h-8 w-auto"
+            />
           </a>
           <nav className="hidden items-center gap-8 text-sm font-medium text-muted-foreground sm:flex">
             <a href="#services" className="transition-colors hover:text-foreground">
@@ -146,7 +149,7 @@ function Index() {
       <section className="relative overflow-hidden pt-20 pb-24 md:pt-32 md:pb-40">
         <div className="container-tight relative z-10 flex flex-col items-center text-center">
           <div className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 text-sm font-medium text-muted-foreground shadow-sm">
-            <Sparkles className="h-4 w-4 text-teal" />
+            <Zap className="h-4 w-4 text-teal" />
             AI automation for modern businesses
           </div>
           <h1 className="mt-8 max-w-4xl text-balance text-4xl font-extrabold tracking-tight text-navy sm:text-5xl md:text-6xl lg:text-7xl">
@@ -322,9 +325,12 @@ function Index() {
       {/* Footer */}
       <footer className="border-t border-border bg-background py-10">
         <div className="container-tight flex flex-col items-center justify-between gap-4 sm:flex-row">
-          <a href="/" className="flex items-center gap-2 text-lg font-bold tracking-tight text-navy">
-            <Sparkles className="h-5 w-5 text-teal" />
-            NaniAiTech
+          <a href="/">
+            <img
+              src={logoAsset.url}
+              alt="NaniAiTech"
+              className="h-7 w-auto"
+            />
           </a>
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} NaniAiTech. All rights reserved.
