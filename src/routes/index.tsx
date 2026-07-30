@@ -118,9 +118,12 @@ function Index() {
       {/* Navigation */}
       <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/80 backdrop-blur-md">
         <div className="container-tight flex h-16 items-center justify-between">
-          <a href="/" className="flex items-center gap-2 text-xl font-bold tracking-tight text-navy">
-            <Sparkles className="h-5 w-5 text-teal" />
-            NaniAiTech
+          <a href="/" className="flex items-center gap-2">
+            <img
+              src={logoAsset.url}
+              alt="NaniAiTech"
+              className="h-8 w-auto"
+            />
           </a>
           <nav className="hidden items-center gap-8 text-sm font-medium text-muted-foreground sm:flex">
             <a href="#services" className="transition-colors hover:text-foreground">
