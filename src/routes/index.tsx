@@ -325,9 +325,12 @@ function Index() {
       {/* Footer */}
       <footer className="border-t border-border bg-background py-10">
         <div className="container-tight flex flex-col items-center justify-between gap-4 sm:flex-row">
-          <a href="/" className="flex items-center gap-2 text-lg font-bold tracking-tight text-navy">
-            <Sparkles className="h-5 w-5 text-teal" />
-            NaniAiTech
+          <a href="/">
+            <img
+              src={logoAsset.url}
+              alt="NaniAiTech"
+              className="h-7 w-auto"
+            />
           </a>
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} NaniAiTech. All rights reserved.
