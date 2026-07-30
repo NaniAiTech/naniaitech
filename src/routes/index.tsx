@@ -124,6 +124,7 @@ function Index() {
               alt="NaniAiTech"
               className="h-8 w-auto"
             />
+            <span className="text-lg font-bold text-black">NaniAiTech</span>
           </a>
           <nav className="hidden items-center gap-8 text-sm font-medium text-muted-foreground sm:flex">
             <a href="#services" className="transition-colors hover:text-foreground">
@@ -325,12 +326,13 @@ function Index() {
       {/* Footer */}
       <footer className="border-t border-border bg-background py-10">
         <div className="container-tight flex flex-col items-center justify-between gap-4 sm:flex-row">
-          <a href="/">
+          <a href="/" className="flex items-center gap-2">
             <img
               src={nSymbol}
               alt="NaniAiTech"
               className="h-7 w-auto"
             />
+            <span className="text-lg font-bold text-black">NaniAiTech</span>
           </a>
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} NaniAiTech. All rights reserved.
