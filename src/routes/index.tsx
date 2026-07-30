@@ -149,7 +149,7 @@ function Index() {
       <section className="relative overflow-hidden pt-20 pb-24 md:pt-32 md:pb-40">
         <div className="container-tight relative z-10 flex flex-col items-center text-center">
           <div className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 text-sm font-medium text-muted-foreground shadow-sm">
-            <Sparkles className="h-4 w-4 text-teal" />
+            <Zap className="h-4 w-4 text-teal" />
             AI automation for modern businesses
           </div>
           <h1 className="mt-8 max-w-4xl text-balance text-4xl font-extrabold tracking-tight text-navy sm:text-5xl md:text-6xl lg:text-7xl">
