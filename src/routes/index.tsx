@@ -17,7 +17,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logoAsset from "@/assets/logo.png.asset.json";
+import nSymbol from "@/assets/n-symbol.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -120,7 +120,7 @@ function Index() {
         <div className="container-tight flex h-16 items-center justify-between">
           <a href="/" className="flex items-center gap-2">
             <img
-              src={logoAsset.url}
+              src={nSymbol}
               alt="NaniAiTech"
               className="h-8 w-auto"
             />
@@ -327,7 +327,7 @@ function Index() {
         <div className="container-tight flex flex-col items-center justify-between gap-4 sm:flex-row">
           <a href="/">
             <img
-              src={logoAsset.url}
+              src={nSymbol}
               alt="NaniAiTech"
               className="h-7 w-auto"
             />
