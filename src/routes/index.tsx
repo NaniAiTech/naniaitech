@@ -102,13 +102,13 @@ const contacts = [
     icon: Phone,
     label: "WhatsApp",
     value: "Chat on WhatsApp",
-    href: "https://wa.me/",
+    href: "https://wa.me/9000157459",
   },
   {
     icon: Linkedin,
     label: "LinkedIn",
     value: "Connect on LinkedIn",
-    href: "https://linkedin.com/company/naniaitech",
+    href: "https://www.linkedin.com/in/naniaitech/",
   },
 ];
 
