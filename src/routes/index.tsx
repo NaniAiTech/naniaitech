@@ -102,7 +102,7 @@ const contacts = [
     icon: Phone,
     label: "WhatsApp",
     value: "Chat on WhatsApp",
-    href: "https://wa.me/9000157459",
+    href: "https://api.whatsapp.com/send/?phone=9000157459",
   },
   {
     icon: Linkedin,
