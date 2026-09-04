@@ -126,9 +126,7 @@ export const Route = createFileRoute("/")({
             "Email Automation",
             "Document Processing",
           ],
-          sameAs: [
-            "https://www.linkedin.com/in/naniaitech/",
-          ],
+          sameAs: ["https://www.linkedin.com/in/naniaitech/"],
         }),
       },
     ],
@@ -144,8 +142,7 @@ const services = [
   {
     icon: MessageCircle,
     title: "WhatsApp AI Assistants",
-    description:
-      "Automated WhatsApp conversations that keep your customers engaged and informed.",
+    description: "Automated WhatsApp conversations that keep your customers engaged and informed.",
   },
   {
     icon: Database,
@@ -209,11 +206,7 @@ function Index() {
       <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/80 backdrop-blur-md">
         <div className="container-tight flex h-16 items-center justify-between">
           <a href="/" className="flex items-center gap-2">
-            <img
-              src={nSymbol}
-              alt="NaniAiTech"
-              className="h-8 w-auto"
-            />
+            <img src={nSymbol} alt="NaniAiTech" className="h-8 w-auto" />
             <span className="text-lg font-bold text-black">NaniAiTech</span>
           </a>
           <nav className="hidden items-center gap-8 text-sm font-medium text-muted-foreground sm:flex">
@@ -370,7 +363,10 @@ function Index() {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="section-padding border-t border-border bg-navy text-navy-foreground">
+      <section
+        id="contact"
+        className="section-padding border-t border-border bg-navy text-navy-foreground"
+      >
         <div className="container-tight">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-sm font-bold uppercase tracking-widest text-teal">Contact</h2>
@@ -417,11 +413,7 @@ function Index() {
       <footer className="border-t border-border bg-background py-10">
         <div className="container-tight flex flex-col items-center justify-between gap-4 sm:flex-row">
           <a href="/" className="flex items-center gap-2">
-            <img
-              src={nSymbol}
-              alt="NaniAiTech"
-              className="h-7 w-auto"
-            />
+            <img src={nSymbol} alt="NaniAiTech" className="h-7 w-auto" />
             <span className="text-lg font-bold text-black">NaniAiTech</span>
           </a>
           <p className="text-sm text-muted-foreground">
