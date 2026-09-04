@@ -1,11 +1,12 @@
 # NaniAiTech Website
+
 # AI Automation That Saves Time, Reduces Costs, and Grows Your Business
 
 The official website for **NaniAiTech**, an AI Automation Agency helping businesses streamline operations through intelligent automation.
 
 ---
 
-##  About
+## About
 
 NaniAiTech builds AI-powered automation solutions that help businesses save time, reduce manual work, improve customer experience, and increase productivity.
 
@@ -13,60 +14,58 @@ Our mission is to make AI accessible and practical for businesses of every size.
 
 ---
 
-##  Services
+## Services
 
-*  AI Chatbots
-*  WhatsApp AI Assistants
-*  Lead Generation Automation
-*  Email Automation
-*  CRM Workflow Automation
-*  Document Processing
-*  Business Process Automation
+- AI Chatbots
+- WhatsApp AI Assistants
+- Lead Generation Automation
+- Email Automation
+- CRM Workflow Automation
+- Document Processing
+- Business Process Automation
 
 ---
 
-##  Who We Help
+## Who We Help
 
 We work with businesses such as:
 
-* Local Businesses
-* Clinics & Healthcare
-* Real Estate Agencies
-* Coaches & Consultants
-* Small E-commerce Stores
-* Professional Service Providers
-* Startups
+- Local Businesses
+- Clinics & Healthcare
+- Real Estate Agencies
+- Coaches & Consultants
+- Small E-commerce Stores
+- Professional Service Providers
+- Startups
 
 ---
 
-##  Website Features
+## Website Features
 
-* Modern Responsive Design
-* Professional Landing Page
-* Hero Section
-* Services Overview
-* Why Choose NaniAiTech
-* Call-to-Action Section
-* Contact Form
-* Mobile Friendly
-* Fast Loading
-* SEO Ready
-
----
-
-##  Tech Stack
-
-* HTML5
-* CSS3
-* JavaScript
-* Responsive Design
-* Git & GitHub
+- Modern Responsive Design
+- Professional Landing Page
+- Hero Section
+- Services Overview
+- Why Choose NaniAiTech
+- Call-to-Action Section
+- Contact Form
+- Mobile Friendly
+- Fast Loading
+- SEO Ready
 
 ---
 
+## Tech Stack
 
+- HTML5
+- CSS3
+- JavaScript
+- Responsive Design
+- Git & GitHub
 
-##  Getting Started
+---
+
+## Getting Started
 
 Clone the repository:
 
@@ -90,7 +89,7 @@ Or use a local development server such as VS Code Live Server.
 
 ---
 
-##  Brand
+## Brand
 
 **Company:** NaniAiTech
 
@@ -114,11 +113,11 @@ Deliver affordable, scalable, and reliable AI automation solutions that help bus
 
 ## 💙 Core Values
 
-* Innovation
-* Simplicity
-* Reliability
-* Customer Success
-* Continuous Improvement
+- Innovation
+- Simplicity
+- Reliability
+- Customer Success
+- Continuous Improvement
 
 ---
 
