@@ -29,11 +29,12 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "NaniAiTech helps businesses automate customer support, WhatsApp, lead generation, CRM workflows, email follow-ups, and repetitive tasks with AI automation.",
+          "NaniAiTech builds AI chatbots, WhatsApp assistants, CRM automation, lead-generation systems, email automation, and workflow solutions for businesses.",
       },
       {
         name: "robots",
-        content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        content:
+          "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
       },
       {
         name: "author",
@@ -43,8 +44,6 @@ export const Route = createFileRoute("/")({
         name: "application-name",
         content: "NaniAiTech",
       },
-
-      // Open Graph
       {
         property: "og:title",
         content: "NaniAiTech | AI Automation Agency for Businesses",
@@ -52,7 +51,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Automate customer support, WhatsApp, lead generation, CRM workflows, and repetitive business tasks with AI.",
+          "Automate customer support, WhatsApp conversations, lead generation, CRM workflows, email follow-ups, and repetitive business tasks with AI.",
       },
       {
         property: "og:type",
@@ -70,8 +69,6 @@ export const Route = createFileRoute("/")({
         property: "og:locale",
         content: "en_IN",
       },
-
-      // Twitter / X
       {
         name: "twitter:card",
         content: "summary_large_image",
@@ -85,25 +82,17 @@ export const Route = createFileRoute("/")({
         content:
           "AI automation solutions for customer support, WhatsApp, lead generation, CRM, email, and repetitive business tasks.",
       },
-
-      // Geographic relevance
       {
-        name: "geo.region",
-        content: "IN",
-      },
-      {
-        name: "geo.placename",
-        content: "India",
+        name: "theme-color",
+        content: "#0f172a",
       },
     ],
-
     links: [
       {
         rel: "canonical",
         href: "https://naniaitech.vercel.app/",
       },
     ],
-
     scripts: [
       {
         type: "application/ld+json",
@@ -116,7 +105,10 @@ export const Route = createFileRoute("/")({
             "AI automation agency helping businesses automate customer support, WhatsApp, lead generation, CRM workflows, email automation, and repetitive tasks.",
           email: "hello@naniaitech.com",
           telephone: "+919000157459",
-          areaServed: "IN",
+          areaServed: {
+            "@type": "Country",
+            name: "India",
+          },
           knowsAbout: [
             "AI Automation",
             "AI Chatbots",
@@ -126,14 +118,13 @@ export const Route = createFileRoute("/")({
             "Email Automation",
             "Document Processing",
           ],
-          sameAs: [
-            "https://www.linkedin.com/in/naniaitech/",
-          ],
+          sameAs: ["https://www.linkedin.com/in/naniaitech/"],
         }),
       },
     ],
   }),
 });
+
 const services = [
   {
     icon: Bot,
@@ -183,16 +174,22 @@ const reasons = [
 
 const contacts = [
   {
-    icon: MailIcon,
-    label: "Email",
-    value: "hello@naniaitech.com",
-    href: "mailto:hello@naniaitech.com",
+    icon: Phone,
+    label: "Phone",
+    value: "+91 9000157459",
+    href: "tel:+919000157459",
   },
   {
     icon: MessageCircle,
     label: "WhatsApp",
     value: "Chat on WhatsApp",
     href: "https://wa.me/919000157459",
+  },
+  {
+    icon: MailIcon,
+    label: "Email",
+    value: "hello@naniaitech.com",
+    href: "mailto:hello@naniaitech.com",
   },
   {
     icon: Linkedin,
@@ -244,11 +241,12 @@ function Index() {
             AI automation for modern businesses
           </div>
           <h1 className="mt-8 max-w-4xl text-balance text-4xl font-extrabold tracking-tight text-navy sm:text-5xl md:text-6xl lg:text-7xl">
-            AI Automation That Saves Time, Reduces Costs, and Grows Your Business
+            AI Automation Agency Helping Businesses Save Time and Grow
           </h1>
           <p className="mt-6 max-w-2xl text-balance text-lg leading-relaxed text-muted-foreground sm:text-xl">
-            We help businesses automate customer support, lead generation, CRM workflows, and
-            repetitive tasks using AI.
+            NaniAiTech builds AI chatbots, WhatsApp assistants, CRM automations,
+            lead-generation systems, and workflow automations that reduce repetitive
+            work and help businesses respond faster.
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
             <Button
@@ -350,7 +348,7 @@ function Index() {
                     </div>
                     <div>
                       <p className="text-sm text-muted-foreground">Hours saved weekly</p>
-                      <p className="text-2xl font-bold text-navy">20+</p>
+                      <p className="text-2xl font-bold text-navy">20+*</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
@@ -359,10 +357,13 @@ function Index() {
                     </div>
                     <div>
                       <p className="text-sm text-muted-foreground">Cost reduction</p>
-                      <p className="text-2xl font-bold text-navy">Up to 40%</p>
+                      <p className="text-2xl font-bold text-navy">40%*</p>
                     </div>
                   </div>
                 </div>
+                <p className="mt-5 text-xs text-muted-foreground">
+                  *Potential results vary by business, workflow, and implementation.
+                </p>
               </div>
             </div>
           </div>
@@ -386,14 +387,18 @@ function Index() {
               className="mt-8 bg-teal px-8 text-lg font-semibold text-teal-foreground shadow-lg shadow-teal/20 transition-all hover:bg-teal/90 hover:shadow-xl"
               asChild
             >
-              <a href="mailto:hello@naniaitech.com">
+              <a
+                href="https://wa.me/919000157459?text=Hi%20NaniAiTech%2C%20I%27d%20like%20a%20free%20AI%20automation%20consultation."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Book a Free AI Consultation
                 <ArrowRight className="h-5 w-5" />
               </a>
             </Button>
           </div>
 
-          <div className="mt-16 grid gap-6 sm:grid-cols-3">
+          <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {contacts.map((contact) => (
               <a
                 key={contact.label}
