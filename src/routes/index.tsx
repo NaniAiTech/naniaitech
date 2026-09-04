@@ -23,27 +23,117 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "NaniAiTech — AI Automation for Business Growth" },
+      {
+        title: "NaniAiTech | AI Automation Agency for Businesses",
+      },
       {
         name: "description",
         content:
-          "NaniAiTech helps businesses automate customer support, lead generation, CRM workflows, and repetitive tasks using AI. Book a free AI consultation.",
+          "NaniAiTech helps businesses automate customer support, WhatsApp, lead generation, CRM workflows, email follow-ups, and repetitive tasks with AI automation.",
       },
       {
+        name: "robots",
+        content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      },
+      {
+        name: "author",
+        content: "NaniAiTech",
+      },
+      {
+        name: "application-name",
+        content: "NaniAiTech",
+      },
+
+      // Open Graph
+      {
         property: "og:title",
-        content: "NaniAiTech — AI Automation for Business Growth",
+        content: "NaniAiTech | AI Automation Agency for Businesses",
       },
       {
         property: "og:description",
         content:
-          "Automate customer support, lead generation, CRM workflows, and repetitive tasks with AI.",
+          "Automate customer support, WhatsApp, lead generation, CRM workflows, and repetitive business tasks with AI.",
       },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
+      {
+        property: "og:type",
+        content: "website",
+      },
+      {
+        property: "og:url",
+        content: "https://naniaitech.vercel.app/",
+      },
+      {
+        property: "og:site_name",
+        content: "NaniAiTech",
+      },
+      {
+        property: "og:locale",
+        content: "en_IN",
+      },
+
+      // Twitter / X
+      {
+        name: "twitter:card",
+        content: "summary_large_image",
+      },
+      {
+        name: "twitter:title",
+        content: "NaniAiTech | AI Automation Agency",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "AI automation solutions for customer support, WhatsApp, lead generation, CRM, email, and repetitive business tasks.",
+      },
+
+      // Geographic relevance
+      {
+        name: "geo.region",
+        content: "IN",
+      },
+      {
+        name: "geo.placename",
+        content: "India",
+      },
+    ],
+
+    links: [
+      {
+        rel: "canonical",
+        href: "https://naniaitech.vercel.app/",
+      },
+    ],
+
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "NaniAiTech",
+          url: "https://naniaitech.vercel.app/",
+          description:
+            "AI automation agency helping businesses automate customer support, WhatsApp, lead generation, CRM workflows, email automation, and repetitive tasks.",
+          email: "hello@naniaitech.com",
+          telephone: "+919000157459",
+          areaServed: "IN",
+          knowsAbout: [
+            "AI Automation",
+            "AI Chatbots",
+            "WhatsApp AI Assistants",
+            "CRM Automation",
+            "Lead Generation",
+            "Email Automation",
+            "Document Processing",
+          ],
+          sameAs: [
+            "https://www.linkedin.com/in/naniaitech/",
+          ],
+        }),
+      },
     ],
   }),
 });
-
 const services = [
   {
     icon: Bot,
@@ -99,10 +189,10 @@ const contacts = [
     href: "mailto:hello@naniaitech.com",
   },
   {
-    icon: Phone,
+    icon: MessageCircle,
     label: "WhatsApp",
     value: "Chat on WhatsApp",
-    href: "https://api.whatsapp.com/send/?phone=9000157459",
+    href: "https://wa.me/919000157459",
   },
   {
     icon: Linkedin,
